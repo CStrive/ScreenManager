@@ -1,16 +1,16 @@
 # ScreenManager
-Flexible way to manage your UI with transitions, layers and proper navigation handling for Unity.
+灵活的方式来管理你的UI与过渡，层和正确的导航处理Unity
 
-## Features
+## 简介
 * ScreenEditor inspector
-* but the whole system can be used fully through code
-* Multi-layered stack based navigation _( alertbox > popup > main )_
-  * Re-usable screen instances
-  * Duplication of screens _( popups, alerts )_
-* Optimized clean and bloatfree code, no additional libraries required
+* 但整个系统可以通过代码完全使用
+* 多层堆栈导航_(alertbox > popup > main)_
+  * 可重用屏幕实例
+  * 重复屏幕_(弹出，警报)_( popups, alerts )_
+* 优化的干净和无臃肿的代码，不需要额外的库
 * Button-mashing-proof, screens respect their order and animate in/out properly
-* Default input handling using Unity's UI events _( including cancel/back event )_
-* Always-on selected button for gamepad and keyboard-aware navigation
+* 使用Unity的UI事件进行默认的输入处理_( 包括cancel/back 事件)_
+* 用于游戏板和键盘感知导航的始终开启的选定按钮
 * **Spread** feature: See all your screens in a grid view for an easier overview and editing
 * **Buttons navigation generation**
   * Optional focused default button
@@ -45,21 +45,21 @@ screenmgr.HideAll();
 ## Info
 
 
-## How to use ?
-Simply create a new ScreenManager on any canvas element. 
-(Preferably right underneath the main canvas element.)
+## 如何使用?
+只需在任何Canvas元素上创建一个新的ScreenManager
+(最好是在主Canvas元素的下方)
 
-Ignore the ScreenManager settings for now, let's create some screens.
+暂时不考虑ScreenManager的设置，让我们创建一些屏幕。
 
-To start, we can add SimpleTweenScreen under ScreenManager GameObject.
+首先，我们可以在ScreenManager GameObject下添加SimpleTweenScreen。
 
-For custom screens: You can either inherit `BaseScreen` class or any other pre-made classes: _AnimatorScreen, Popup, SimpleTweenScreen, TweenedScreen_
+对于自定义屏幕。你可以继承`BaseScreen`类或任何其他预制类。_AnimatorScreen，Popup，SimpleTweenScreen，TweenedScreen_。
 
 Once **SimpleTweenScreen** is added, you'll notice few things :
 * It added a CanvasGroup element
 * It has a lot of strange settings
 
-By default `BaseScreen` class provides several important settings, these settings are the core of makes the screen work so well :
+默认情况下' BaseScreen '类提供了几个重要的设置，这些设置是让屏幕工作得很好的核心
 
 * Generation Settings
  * **Generate Navigation** ( Create explicit navigation so that keyboard/gamepad navigation never leaks to an another screen )
@@ -84,17 +84,17 @@ Click on it, it will set that screen as the default/main screen.
 
 ![ScreenManager](/img/step0.png?raw=true "ScreenManager")
 
-Now that's done we can pass to setting up our buttons.
+现在已经完成了，我们可以开始设置我们的按钮了。
 
-There's two ways to setup the buttons :
+有两种方法来设置这些按钮 :
 
 ![Button](/img/step1.png?raw=true "Button")
 ![Button](/img/step2.png?raw=true "Button")
 
-You can either show a screen by its name, or by it's GameObject reference.
+你可以通过名称来显示一个屏幕，也可以通过它的GameObject引用来显示。
 
 
 ( Tutorial to be finished )
 
-## Contribution
-There's always more to add, so if you want to help then feel free to contribute !
+## 贡献 Contribution
+总会有更多的内容需要添加，所以如果你想帮忙，那么请随时投稿 !
