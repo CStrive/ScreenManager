@@ -55,32 +55,32 @@ screenmgr.HideAll();
 
 对于自定义屏幕。你可以继承`BaseScreen`类或任何其他预制类。_AnimatorScreen，Popup，SimpleTweenScreen，TweenedScreen_。
 
-Once **SimpleTweenScreen** is added, you'll notice few things :
-* It added a CanvasGroup element
-* It has a lot of strange settings
+一旦添加了SimpleTweenScreen，你会注意到几件事:
+* 它添加了一个CanvasGroup元素
+* 它有很多奇怪的设置
 
 默认情况下' BaseScreen '类提供了几个重要的设置，这些设置是让屏幕工作得很好的核心
 
 * Generation Settings
- * **Generate Navigation** ( Create explicit navigation so that keyboard/gamepad navigation never leaks to an another screen )
- * **Cancel Selection** ( Button selected or executed when ESC or back button is pressed )
+ * **Generate Navigation** ( 创建明确的导航，使键盘/游戏板导航永远不会泄漏到另一个屏幕上 )
+ * **Cancel Selection** ( 当按下ESC或返回按钮时，选择或执行的按钮 )
 * Cancel Selection
- * **Hide Current** ( Hide previous screen or overlay on top of the previous screen )
- * **Keep on Top when hiding** ( Keep its drawing order on top when hiding )
- * **Layer Priority** ( All screens have layers, imagine that an alert box will block all screen changes that are below it but wouldn't block other alert boxes )
- * **Default Selection** ( Button selected by default when the screen is shown, when left empty : first button found is selected )
+ * **Hide Current** ( 隐藏前一个屏幕或叠加在前一个屏幕之上 )
+ * **Keep on Top when hiding** ( 隐藏时，保持其绘图顺序在顶部 )
+ * **Layer Priority** ( 所有的屏幕都有层次，想象一下，一个警报框会阻止所有在它下面的屏幕变化，但不会阻止其他警报框。 )
+ * **Default Selection** ( 当屏幕显示时默认选择的按钮，当留空时：找到的第一个按钮被选中。 )
 
-You can leave those settings as they are for now, no need for additional configuration.
+你可以暂时保留这些设置，不需要进行额外的配置。
 
 
-Once we added **SimpleTweenScreen** to all our screens, we can define our default screen that's going to be open on run.
+一旦我们把**SimpleTweenScreen**添加到我们所有的屏幕上，我们就可以定义我们的默认屏幕，它将在运行时被打开。
 
-Go to **ScreenManager** _( Shortcut Ctrl+Alt+T or Window/Select ScreenManager in the menu )_
+进入**ScreenManager** _( 快捷键Ctrl+Alt+T或Window/Select ScreenManager in menu )_。
 
-Select your **SimpleTweenScreen** in the Screens section. 
-Once selected you'll see a button named "Set Default" appear. 
+在Screens部分选择你的**SimpleTweenScreen**
+一旦选定，你会看到一个名为 "Set Default "的按钮出现。
 
-Click on it, it will set that screen as the default/main screen.
+点击它，它将设置该屏幕为defaul/main screen。
 
 ![ScreenManager](/img/step0.png?raw=true "ScreenManager")
 
